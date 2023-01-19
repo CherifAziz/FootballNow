@@ -1,0 +1,74 @@
+.services-navig {
+
+    // margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        // margin-top: 130px;
+        // font-weight: bold;
+        // margin-left: 20px;
+        // background: $color-3;
+        // width: 950px;
+        border-radius: 10rem;
+        margin-left: -200px;
+        // margin-top: 10px;
+
+        a {
+            text-decoration: none;
+            // padding-right: 60px;
+            padding: 20px;
+            li {
+                // padding-left: 10px;
+                font-size: 18px;
+                color: white;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover {
+                    color: #F9E00F;
+                }
+            }
+        }
+
+        .nav-active {
+            position: relative;
+            &::after {
+                content: "";
+                height: 4px;
+                width: 0;
+                background: #F9E00F;
+                position: absolute;
+                border-radius: 10px;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-animation: anim 0.3s ease forwards;
+                animation: anim 0.6s ease forwards;
+  
+                @-webkit-keyframes anim {
+                    to {
+                        width: 100%;
+                    }
+                }
+                @keyframes anim {
+                    to {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    width: 40%;
+}
+
+.logo {
+    // flex-basis: 40%
+}

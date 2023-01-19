@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url(../img/CeraProBlack.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Cera Pro Regular';
+  src: url(../img/CeraProRegular.otf) format('opentype');
+}
+
+body {
+    font-family: 'Cera Pro', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-color: #222327;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.center{
+  text-align: center;
+}
