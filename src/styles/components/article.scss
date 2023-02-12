@@ -1,0 +1,28 @@
+.article {
+    display: inline;
+}
+
+.image2 {
+    // display: block;
+    opacity: 1;
+    width: 650px;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: 650px 40%;
+    margin-left: 20px;
+    margin-top: -50px;
+
+    p {
+        font-family: 'Cera Pro Regular', sans-serif;
+        font-size: 18px;
+
+    }
+    h1 {
+        font-family: 'Cera Pro Regular', sans-serif;
+    }
+}

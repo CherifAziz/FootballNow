@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <div>
       <div className="services-navig">
-        <div class="logo">
+        <div className="logo">
           <img src="https://cdn.discordapp.com/attachments/772116245734227989/1063140895270117376/logo.png" />
         </div>
         <ul>
@@ -17,25 +17,32 @@ const Navigation = () => {
             to="/home"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
+            <li>HOME</li>
+          </NavLink>
+
+          <NavLink
+            to="/live"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
             <li>LIVE</li>
           </NavLink>
           <NavLink
-            to="/all"
+            to="/leagues"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
-            <li>CHAMPIONNATS</li>
+            <li>LEAGUES</li>
           </NavLink>
           <NavLink
-            to="/Workspace"
+            to="/news/popularity"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>NEWS</li>
           </NavLink>
           <NavLink
-            to="/My_Workflow"
+            to="/highlights"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
-            <li>RESUME</li>
+            <li>HIGHLIGHTS</li>
           </NavLink>
         </ul>
       </div>

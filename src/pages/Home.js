@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div>
       <Navigation />
+      {sessionStorage.removeItem("id")}
       <Match />
     </div>
   );
